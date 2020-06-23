@@ -9,6 +9,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
+	<h2 id="test2">
+		{{ msg2 }}
+	</h2>
 
 	<div id="test">
 		<span v-bind:title="msg">
@@ -16,9 +19,17 @@
 		</span>
 	</div>
 
-	<h2 id="test2">
-		{{ msg2 }}
-	</h2>
+	<div id="check">
+		<p v-if="check">
+			yo see me
+		</p>
+	</div>
+
+	<div id="mango">
+		<p>{{ message }}</p>
+		<button v-on:click="reverseMessage">Reverse It</button>
+	</div>
+
 
 <script src="index.js"></script>
 </body>
