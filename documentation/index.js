@@ -39,3 +39,11 @@ var mango = new Vue({
 
 })
 
+// v-model
+var model = new Vue({
+	el:'#model',
+	data:{
+		message: 'two way binding'
+	}
+})
+
