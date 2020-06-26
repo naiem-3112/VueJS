@@ -1977,16 +1977,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      counter: 0
+      counter: 0,
+      blogs: []
     };
   },
   methods: {
     countNumber: function countNumber(number) {
       this.counter += number;
     }
+  },
+  // take a created hook, suppose getting data from server
+  created: function created() {
+    // get the blog post
+    var posts = [{
+      id: 1,
+      title: 'post title 1',
+      post: 'this is post 1'
+    }, {
+      id: 2,
+      title: 'post title 2',
+      post: 'this is post 2'
+    }, {
+      id: 3,
+      title: 'post title 3',
+      post: 'this is post 3'
+    }];
+    this.blogs = posts;
   }
 });
 
@@ -37597,33 +37625,53 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h2", [_vm._v("The number is " + _vm._s(_vm.counter))]),
-    _vm._v(" "),
-    _c(
-      "button",
-      {
-        on: {
-          click: function($event) {
-            return _vm.countNumber(1)
+  return _c(
+    "div",
+    [
+      _c("h2", [_vm._v("The number is " + _vm._s(_vm.counter))]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          on: {
+            click: function($event) {
+              return _vm.countNumber(1)
+            }
           }
-        }
-      },
-      [_vm._v("Increase")]
-    ),
-    _vm._v(" "),
-    _c(
-      "button",
-      {
-        on: {
-          click: function($event) {
-            return _vm.countNumber(-1)
+        },
+        [_vm._v("Increase")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          on: {
+            click: function($event) {
+              return _vm.countNumber(-1)
+            }
           }
-        }
-      },
-      [_vm._v("Decrease")]
-    )
-  ])
+        },
+        [_vm._v("Decrease")]
+      ),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _vm._l(_vm.blogs, function(blog, i) {
+        return _vm.blogs.length
+          ? _c("div", { key: i }, [
+              _c("ul", [
+                _c("li", [_vm._v(_vm._s(blog.id))]),
+                _vm._v(" "),
+                _c("li", [_vm._v(_vm._s(blog.title))]),
+                _vm._v(" "),
+                _c("li", [_vm._v(_vm._s(blog.post))])
+              ])
+            ])
+          : _vm._e()
+      })
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
