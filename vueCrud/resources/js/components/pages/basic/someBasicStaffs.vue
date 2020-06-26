@@ -20,7 +20,7 @@
         <div>
             <h2 v-if="forSee">now you see me</h2>
             <h2 v-else>now you don't</h2>
-            <button @click="forSee = !forSee">change me</button>
+            <button @click="showHide()">change me</button>
         </div>
 
     </div>
@@ -41,8 +41,10 @@
         methods: {
            countNumber(number){
                this.counter += number
-
-           }
+           },
+            showHide(){
+               this.forSee = !this.forSee
+            }
         },
 
         // take a created hook, suppose getting data from server

@@ -2008,6 +2008,9 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     countNumber: function countNumber(number) {
       this.counter += number;
+    },
+    showHide: function showHide() {
+      this.forSee = !this.forSee;
     }
   },
   // take a created hook, suppose getting data from server
@@ -37694,7 +37697,7 @@ var render = function() {
           {
             on: {
               click: function($event) {
-                _vm.forSee = !_vm.forSee
+                return _vm.showHide()
               }
             }
           },
