@@ -1,10 +1,12 @@
 <template>
     <div>
+<!--        count value-->
         <h2>The number is {{ counter }}</h2>
         <button @click="countNumber(1)">Increase</button>
         <button @click="countNumber(-1)">Decrease</button>
         <hr>
 
+<!--        for loop-->
         <div v-for="(blog, i) in blogs" :key="i" v-if="blogs.length">
             <ul>
                 <li>{{ blog.id }}</li>
@@ -12,6 +14,15 @@
                 <li>{{ blog.post }}</li>
             </ul>
         </div>
+        <hr>
+
+<!--        if else-->
+        <div>
+            <h2 v-if="forSee">now you see me</h2>
+            <h2 v-else>now you don't</h2>
+            <button @click="forSee = !forSee">change me</button>
+        </div>
+
     </div>
 </template>
 
@@ -23,6 +34,7 @@
             return{
                 counter: 0,
                 blogs  : [],
+                forSee : false,
             }
         },
 
