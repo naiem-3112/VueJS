@@ -83816,27 +83816,37 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "_1side_menu_list" }, [
               _c("ul", { staticClass: "_1side_menu_list_ul" }, [
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("Icon", { attrs: { type: "ios-speedometer" } }),
-                      _vm._v("Overview")
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: "/" } },
+                      [
+                        _c("Icon", { attrs: { type: "ios-speedometer" } }),
+                        _vm._v("Dashboard")
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("Icon", { attrs: { type: "ios-speedometer" } }),
-                      _vm._v("Tags")
-                    ],
-                    1
-                  )
-                ])
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: "tags" } },
+                      [
+                        _c("Icon", { attrs: { type: "ios-speedometer" } }),
+                        _vm._v("Tags")
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
               ])
             ])
           ])
