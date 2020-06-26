@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel vue </title>
-
+        <link rel="stylesheet" href="/css/all.css">
 
     </head>
     <body>

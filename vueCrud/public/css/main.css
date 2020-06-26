@@ -138,25 +138,25 @@ SELF HOSTED FONTS
 */
 @font-face {
     font-family: 'HK Grotesk';
-    src: url("/static/fonts/hk-grotesk/HKGrotesk-Light.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Light.woff") format("woff");
+    /*src: url("/static/fonts/hk-grotesk/HKGrotesk-Light.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Light.woff") format("woff");*/
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'HK Grotesk';
-    src: url("/static/fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
+    /*src: url("/static/fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");*/
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'HK Grotesk';
-    src: url("/static/fonts/hk-grotesk/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Regular.woff") format("woff");
+    /*src: url("/static/fonts/hk-grotesk/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Regular.woff") format("woff");*/
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'HK Grotesk';
-    src: url("/static/fonts/hk-grotesk/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Medium.woff") format("woff");
+    /*src: url("/static/fonts/hk-grotesk/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/hk-grotesk/HKGrotesk-Medium.woff") format("woff");*/
     font-weight: 500;
     font-style: normal;
 }
@@ -713,12 +713,12 @@ li.activeclass {
     font-size: 69px;
 }
 .service_title{}
-.{}
-.{}
-.{}
-.{}
-.{}
-.{}
+/*.{}*/
+/*.{}*/
+/*.{}*/
+/*.{}*/
+/*.{}*/
+/*.{}*/
 /*========= 4.HOME =======*/
 
 /*========= 5.ADD MONEY =======*/
@@ -1490,7 +1490,7 @@ Custom Checkbox
 }
 
 .custom-checkbox {
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -1514,7 +1514,7 @@ Custom Checkbox
 .custom-checkbox .custom-checkbox--label {
     vertical-align: top;
     margin: 0;
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -1959,7 +1959,7 @@ body.has-sticky-navbar .navbar {
 }
 .helper-tooltip {
     margin-left: 10px;
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -1996,7 +1996,7 @@ body.has-sticky-navbar .navbar {
 .carousel-light .carousel-indicators li {
     width: 40px;
     height: 40px;
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -2347,7 +2347,7 @@ FAQ CARDS
 }
 .btn-has-icon {
     font-weight: normal;
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -2362,7 +2362,7 @@ FAQ CARDS
 }
 .btn-has-icon .btn-icon {
     margin: 0 10px;
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -2517,7 +2517,7 @@ FAQ CARDS
 }
 .google-button__icon {
     background: white;
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -3023,7 +3023,7 @@ i.cross_icon{
     }
 
     .tabs-slider-thumbs {
-        display: -webkit-inline-box;
+        /*display: -webkit-inline-box;*/
         display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
         display: inline-flex;
