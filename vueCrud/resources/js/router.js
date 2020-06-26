@@ -4,6 +4,9 @@ Vue.use(Router)
 import secondPage from './components/pages/secondPage'
 import firstPage from './components/pages/myFirstVuePage'
 import hooks from './components/pages/basic/hooks'
+import basicStaffs from './components/pages/basic/someBasicStaffs'
+
+//all Vue routes
 const routes = [
     {
         path: '/my-new-vue-route',
@@ -19,6 +22,12 @@ const routes = [
     {
         path: '/hooks',
         component: hooks
+    },
+
+    //vue besic staffs
+    {
+        path: '/basic-staffs',
+        component: basicStaffs
     }
 ]
 

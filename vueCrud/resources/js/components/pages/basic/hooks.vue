@@ -6,15 +6,15 @@
 </template>
 
 <script>
-    export default{
-        data(){
-            return{
-                name:'naiem'
+    export default {
+        data() {
+            return {
+                name: 'naiem'
             }
         },
 
         // hooks
-        beforeCreate(){
+        beforeCreate() {
             console.log(this.$refs.myref)//try to access html-undefined
             console.log(this.name)//showing undefined bcz instantiated before creating data and render HTML
         },
