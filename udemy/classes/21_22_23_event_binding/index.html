@@ -27,6 +27,13 @@
       <button v-on:click="decrement(num)">Remove</button>
       <button v-on:click="increment(num)">Add</button>
 
+      <!-- if function has no parameter to pass than default event can use as parament on js/vue -->
+      <!-- <input type="text" v-on:input="setName"> -->
+      
+      <!-- if function has parameter to pass than default event can use by reserved variable $event on vue -->
+      <input type="text" v-on:input="setName($event, 'EndText')">
+      <p>Your Text: {{ text }}</p>
+
       <p>Result: {{ counter }}</p>
     </section>
   </body>
