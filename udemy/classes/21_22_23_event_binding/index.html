@@ -17,15 +17,15 @@
       <h1>Vue Events</h1>
     </header>
     <section id="events">
-      <h2>Events in Action</h2>
+      <h2>Events in Action for Value <input type="number" v-model="num"> </h2>
 
       <!-- logic in html file -->
       <!-- <button v-on:click="counter++">Add</button>
       <button v-on:click="counter--">Remove</button> -->
 
       <!-- logic in js file and point them here -->
-      <button v-on:click="increment">Add</button>
-      <button v-on:click="decrement">Remove</button>
+      <button v-on:click="decrement(num)">Remove</button>
+      <button v-on:click="increment(num)">Add</button>
 
       <p>Result: {{ counter }}</p>
     </section>
