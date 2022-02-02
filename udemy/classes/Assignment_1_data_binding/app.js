@@ -1,4 +1,4 @@
-Vue.createApp({
+const app = Vue.createApp({
     data() {
         return{
             name:'Md. Shahadat Hossain',
@@ -16,4 +16,6 @@ Vue.createApp({
             return this.age +8;
         }
     }
-}).mount('#assignment');
+});
+
+app.mount('#assignment');
