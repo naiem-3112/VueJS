@@ -15,7 +15,7 @@
             background-color: brown;
 
             /* perfect centering issue solved*/
-                height: 100vh;
+                height: 100px;
                 justify-content: center;
                 align-items: center;
 
@@ -70,12 +70,37 @@
             /* flex items */
                 
             /* flex items End*/
-
         }
         .flex-container > div{
             padding: 5px;
             margin: 5px;
             background-color: #ffffff;
+        }
+
+        .flex-containerTwo{
+            display: flex;
+            text-align: center;
+            font-size: 15px;
+            flex-direction: row;
+        }
+        .left-flex-item{
+            background-color: aqua;
+            color: black;
+            padding: 7px;
+            flex: 50%;
+        }
+        .right-flex-item{
+            background-color: blue;
+            color: white;
+            padding: 7px;
+            flex: 50%;
+        }
+
+        /* Responsive layout - (Makes a one column layout instead of two column layout) */
+        @media(max-width: 800px){
+            .flex-containerTwo{
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -86,6 +111,11 @@
         <div>item 1</div>
         <div>item 2</div>
         <div>item 3</div>
+    </div>
+
+    <div class="flex-containerTwo">
+        <div class="left-flex-item">1</div>
+        <div class="right-flex-item">2</div>
     </div>
 </body>
 </html>
