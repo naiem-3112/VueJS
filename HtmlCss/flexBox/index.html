@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box From W3 School</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex-container{
+            display: flex;
+            background-color: brown;
+
+            /* perfect centering issue solved*/
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+
+            /* If considering Column(Vertically), then need to spacify the "Height" */
+
+            /* flex-direction property */
+                /* flex-direction: row;
+                flex-direction: row-reverse;
+                flex-direction: column;
+                flex-direction: column-reverse; */
+            /* flex-direction property End*/
+
+            /* flex-wrap property */
+                /* flex-wrap: wrap;
+                flex-wrap: nowrap;
+                flex-wrap: wrap-reverse; */
+            /* flex-wrap property End*/
+
+            /* flex-flow property*/ 
+                /* For setting both flex-direction and flex-wrap proparty together */
+                flex-flow: row wrap;
+            /* flex-flow property End*/
+
+            /* justify-content property*/
+                /* align flex items Horizontally(considering row) */
+                    /* justify-content: center;
+                    justify-content: flex-start;
+                    justify-content: flex-end;
+                    justify-content: space-around;
+                    justify-content: space-between; */
+            /* justify-content property End*/
+
+            /* align-items property End*/
+                /* align flex items Vertically(considering column) */
+                    /* align-items: center;
+                    align-items: flex-start;
+                    align-items: flex-end;
+                    align-items: stretch;
+                    align-items: baseline; */
+            /* align-items property End*/
+
+            /* align-content property*/
+                /* used to align the flex lines(considering column) */
+                    /* align-content: center;
+                    align-content: flex-start;
+                    align-content: flex-end;
+                    align-content: space-around;
+                    align-content: space-between;
+                    align-content: stretch; */
+            /* align-content property End*/
+
+        }
+        .flex-container > div{
+            padding: 5px;
+            margin: 5px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- a flexible container with set display property to flex -->
+    <div class="flex-container">
+         <!--This are direct elements of flex-container, which is automatically flex items-->
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+    </div>
+</body>
+</html>
