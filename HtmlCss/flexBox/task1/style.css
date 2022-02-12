@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.task01{
+    background-color: #bdbdbd;
+    height: 100vh;
+}
+.header{
+    
+    max-width: 20%;
+    margin: 5px;
+    padding: 3px;
+    background-color: orange;
+}
