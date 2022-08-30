@@ -18,9 +18,31 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button>Add</button>
-      <button>Remove</button>
+      <button v-on:click="add(5)">Add</button>
+      <button v-on:click="remove(5)">Remove</button>
+      <!-- vue modifier left/right/middle btn of mouse to click -->
+      <button v-on:click.right="remove(5)">Remove using right click</button>
+      <p v-once>Start From: {{ counter }}</p>
       <p>Result: {{ counter }}</p>
+      <label for="">any key press</label>
+      <input type="text" v-on:keyup="setName($event, 'Hossain Naiem')">
+      &nbsp;
+      <!-- vue modifier define which key to press and release -->
+      <label for="">specified key press(enter)</label>
+      <input type="text" v-on:keyup.enter="setName($event, 'Hossain Naiem')">
+      <p>Your Name: {{ name }}</p>
+
+      <!-- without vue modifier -->
+      <form v-on:submit="onSubmit()">
+          <input type="text">
+          <button>submit without modifier</button>
+      </form>
+      <br>
+      <!-- with vue modifier -->
+      <form v-on:submit.prevent="onSubmit()">
+          <input type="text">
+          <button>submit with modifier</button>
+      </form>
     </section>
   </body>
 </html>
